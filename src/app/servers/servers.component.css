@@ -1,0 +1,13 @@
+section {
+    background-color: rgb(255, 249, 237);
+    border-radius: 20px;
+}
+h1 {
+    color: rgb(141, 82, 64);
+    font-size: 2rem;
+}
+
+h2 {
+    color: rgb(165, 117, 102);
+    font-size: 1.4rem;
+}
