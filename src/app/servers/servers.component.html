@@ -1,6 +1,15 @@
 <section>
+    <label>Server name</label>
+
+    <!-- <input type="text" class="form-control" (input)="onUpdateServerName($event)"> -->
+
+        <input type="text" class="form-control" [(ngModel)]="serverName">
+
     <h1>This is a Server Component,</h1>
     <h2>which has another component below</h2>
-    <button [disabled] = "!allowNewServer" class="btn btn-warning">Add Server</button>
+    <button [disabled] = "!allowNewServer" class="btn btn-warning" (click)="onCreateServer()">Add Server</button>
+    <hr>
+    <!-- <p>{{serverName}}</p> -->
+    <p>{{serverCreationStatus}}</p>
     <app-server></app-server>
 </section>
